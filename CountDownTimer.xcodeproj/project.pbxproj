@@ -16,6 +16,12 @@
 		54C2FB0E2963F611007EAEC0 /* CountDownTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C2FB0D2963F611007EAEC0 /* CountDownTimerTests.swift */; };
 		54C2FB182963F611007EAEC0 /* CountDownTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C2FB172963F611007EAEC0 /* CountDownTimerUITests.swift */; };
 		54C2FB1A2963F611007EAEC0 /* CountDownTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C2FB192963F611007EAEC0 /* CountDownTimerUITestsLaunchTests.swift */; };
+		54C2FB2A2963F6CD007EAEC0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C2FB292963F6CD007EAEC0 /* HomeViewController.swift */; };
+		54C2FB2C2963F6E1007EAEC0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C2FB2B2963F6E1007EAEC0 /* HomeView.swift */; };
+		54C2FB2E2963F6F3007EAEC0 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C2FB2D2963F6F3007EAEC0 /* CalendarViewController.swift */; };
+		54C2FB322963F717007EAEC0 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C2FB312963F717007EAEC0 /* CalendarView.swift */; };
+		54C2FB342963F726007EAEC0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C2FB332963F726007EAEC0 /* SettingsView.swift */; };
+		54C2FB362963F734007EAEC0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C2FB352963F734007EAEC0 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		54C2FB132963F611007EAEC0 /* CountDownTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountDownTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C2FB172963F611007EAEC0 /* CountDownTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimerUITests.swift; sourceTree = "<group>"; };
 		54C2FB192963F611007EAEC0 /* CountDownTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		54C2FB292963F6CD007EAEC0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		54C2FB2B2963F6E1007EAEC0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		54C2FB2D2963F6F3007EAEC0 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		54C2FB312963F717007EAEC0 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		54C2FB332963F726007EAEC0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		54C2FB352963F734007EAEC0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,9 @@
 		54C2FAF52963F610007EAEC0 /* CountDownTimer */ = {
 			isa = PBXGroup;
 			children = (
+				54C2FB282963F6BD007EAEC0 /* Settings */,
+				54C2FB272963F6B1007EAEC0 /* Calendar */,
+				54C2FB262963F691007EAEC0 /* Home */,
 				54C2FAF62963F610007EAEC0 /* AppDelegate.swift */,
 				54C2FAF82963F611007EAEC0 /* SceneDelegate.swift */,
 				54C2FAFA2963F611007EAEC0 /* ViewController.swift */,
@@ -125,6 +140,33 @@
 				54C2FB192963F611007EAEC0 /* CountDownTimerUITestsLaunchTests.swift */,
 			);
 			path = CountDownTimerUITests;
+			sourceTree = "<group>";
+		};
+		54C2FB262963F691007EAEC0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				54C2FB292963F6CD007EAEC0 /* HomeViewController.swift */,
+				54C2FB2B2963F6E1007EAEC0 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		54C2FB272963F6B1007EAEC0 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				54C2FB2D2963F6F3007EAEC0 /* CalendarViewController.swift */,
+				54C2FB312963F717007EAEC0 /* CalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		54C2FB282963F6BD007EAEC0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				54C2FB332963F726007EAEC0 /* SettingsView.swift */,
+				54C2FB352963F734007EAEC0 /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C2FB2E2963F6F3007EAEC0 /* CalendarViewController.swift in Sources */,
+				54C2FB342963F726007EAEC0 /* SettingsView.swift in Sources */,
+				54C2FB322963F717007EAEC0 /* CalendarView.swift in Sources */,
 				54C2FAFB2963F611007EAEC0 /* ViewController.swift in Sources */,
 				54C2FAF72963F610007EAEC0 /* AppDelegate.swift in Sources */,
 				54C2FAF92963F611007EAEC0 /* SceneDelegate.swift in Sources */,
+				54C2FB2C2963F6E1007EAEC0 /* HomeView.swift in Sources */,
+				54C2FB2A2963F6CD007EAEC0 /* HomeViewController.swift in Sources */,
+				54C2FB362963F734007EAEC0 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
