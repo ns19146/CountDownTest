@@ -13,13 +13,13 @@ struct HomeView: View {
             VStack(alignment: .trailing) {
                 HStack() {
                     Text("Timer")
-                        .font(.largeTitle)
+                        .font(.title)
                         .padding()
                     Spacer()
                     NavigationLink { CalendarView()
                     } label: {
                         Text("+")
-                            .font(.largeTitle)
+                            .font(.title)
                             .foregroundColor(.black)
                             .padding()
                     }
