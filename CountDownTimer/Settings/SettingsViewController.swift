@@ -6,13 +6,25 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //SwiftUIとUIKitの接続
+        let hostingController = UIHostingController(rootView: SettingsView())
+        addChild(hostingController)
+        view.addSubview(hostingController.view)
+        hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([hostingController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                                     hostingController.view.topAnchor.constraint(equalTo: view.topAnchor),
+                                     hostingController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                                     hostingController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)])
+        hostingController.didMove(toParent: self)
+        
+       
     }
     
 

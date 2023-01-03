@@ -13,7 +13,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //SwiftUIとUIKitの接続
         let hostingController = UIHostingController(rootView: HomeView())
         addChild(hostingController)
         view.addSubview(hostingController.view)
@@ -23,6 +22,7 @@ class HomeViewController: UIViewController {
                                      hostingController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
                                      hostingController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)])
         hostingController.didMove(toParent: self)
+        // Do any additional setup after loading the view.
     }
     
 

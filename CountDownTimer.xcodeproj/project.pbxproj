@@ -160,8 +160,8 @@
 		54C2FB282963F6BD007EAEC0 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				54C2FB332963F726007EAEC0 /* SettingsView.swift */,
 				54C2FB352963F734007EAEC0 /* SettingsViewController.swift */,
+				54C2FB332963F726007EAEC0 /* SettingsView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
