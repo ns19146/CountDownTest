@@ -9,7 +9,26 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("This is MainPage")
+        NavigationView {
+            VStack(alignment: .trailing) {
+                HStack() {
+                    Text("Timer")
+                        .font(.largeTitle)
+                        .padding()
+                    Spacer()
+                    NavigationLink { CalendarView()
+                    } label: {
+                        Text("+")
+                            .font(.largeTitle)
+                            .foregroundColor(.black)
+                            .padding()
+                    }
+                }
+                Spacer()
+                
+            }
+            .frame(maxWidth: .infinity)
+        }
     }
 }
 
